@@ -55,7 +55,7 @@ Return the response strictly in formatted Markdown as requested in the prompt. D
     // Given the prompt is self-contained, a powerful LLM can do this in one shot.
     const chatCompletion = await groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "llama-3.1-70b-versatile", // Updated to a supported model
+      model: "llama-3.3-70b-versatile", // Updated to a supported model
       temperature: 0.2,
       max_tokens: 4000,
     });
